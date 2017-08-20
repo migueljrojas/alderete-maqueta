@@ -1,0 +1,66 @@
+.cta {
+    background: $darkGreen;
+    color:$white;
+    padding: $base*2 0;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+
+    @include mq(sm){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    @include mq(md){
+        flex-direction: row;
+    }
+
+    &__title {
+        font-family: $altFont;
+        font-size:44px;
+        font-weight: normal;
+        text-align: center;
+        width: 100%;
+
+        @include mq(md){
+            margin-right: $base*2;
+            width: auto;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        z-index: 0;
+        opacity: .1;
+        pointer-events: none;
+        top: 0;
+        bottom: 0;
+
+        img {
+            min-height: 100%;
+        }
+
+        @include mq(sm){
+
+        }
+
+        &:before,
+        &:after{
+            content: '';
+            position: absolute;
+            width: 20%;
+            height: 100%;
+            background: linear-gradient(to right, $darkGreen, transparent);
+        }
+
+        &:after{
+            right:0;
+            background: linear-gradient(to left, $darkGreen, transparent);
+        }
+    }
+
+    a._buton {
+    }
+}

@@ -1,0 +1,35 @@
+$white: #fff;
+$black: #000;
+$corpBlack: #3e372c;
+$darkestGray: #444340;
+$darkGray: #787871;
+$midGray: #999;
+$lightGray: #ebebeb;
+$lightestGray: #f4f7f8;
+$orange: #cf562f;
+$green: #7b8c49;
+$darkGreen: #5d6e41;
+$yellow: #f5c146;
+$darkYellow: #daac3e;
+
+$link: $yellow;
+$linkHover: $darkYellow;
+$text: $darkGray;
+$textLight: $white;
+$textDark: $darkestGray;
+$textBlack: $black;
+$accent: $orange;
+$bg: $white;
+$bgSecondary: $lightestGray;
+$bgDark: $darkestGray;
+$bgGreen: $darkGreen;
+
+$base: 40px;
+$radius: 5px;
+
+$duration: 0.3s;
+$easing: cubic-bezier(.785, .135, .15, .86);
+$easingLight: ease;
+
+$mainFont: 'Raleway', sans-serif;
+$altFont: 'Vidaloka', serif;

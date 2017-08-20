@@ -1,0 +1,43 @@
+._form{
+    input,
+    textarea,
+    select{
+        border:none;
+        outline:none;
+        background: transparentize($yellow, .5);
+        border-radius:0;
+        width:100%;
+        font-size: 14px;
+        font-weight: 300;
+        padding: $base/4;
+        color:$midGray;
+        margin-bottom: $base/4;
+        transition: all $duration $easing;
+        color: $white;
+
+        &:focus {
+            background: $yellow;
+        }
+    }
+
+    label{
+        color:$white;
+        font-size: 14px;
+        display: block;
+        text-align: left;
+    }
+
+    ::placeholder{
+        opacity:.3;
+    }
+    ._submit{
+        color:#fff;
+        background: $link;
+        width: 300px;
+        transition: all .3s ease;
+
+        &:hover{
+            background: $orange - #333;
+        }
+    }
+}

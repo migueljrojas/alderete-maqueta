@@ -1,0 +1,41 @@
+header.header.-ontop
+    .header__hamburguer
+        span
+        span
+        span
+    
+    .container.header__container
+        .header__top
+            .header__logo.wow.fadeInDown
+                a(href="/")
+                    img(src="/images/logo.png")
+                    
+            .header__data
+                p Talcahuano 160. Timbre 2 - D. C.A.B.A
+                p._call Llamanos
+                p._phone +54 11 8888 8888
+                
+            .header__auxiliar                
+                ul.header__social
+                    each red in site.data.social
+                        li
+                            a(href=red.url, target="_blank")
+                                i(class="fa fa-#{red.name}")
+                                
+                a._button(href="/contacto") Concretar Entrevista
+    .header__bottom        
+        nav.header__nav
+            ul.header__menu
+                each item in site.data.header
+                    li
+                        if item.submenu
+                            a(href=item.url, class="-submenu")= item.name
+                            ul.header__submenu
+                                each link in item.submenu
+                                    li
+                                        a(href=link.url)= link.text
+                        else 
+                            a(href=item.url)= item.name
+            
+            
+            

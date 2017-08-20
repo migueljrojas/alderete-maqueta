@@ -1,0 +1,52 @@
+[
+    {
+        "name":"El Estudio",
+        "url":"/nosotros"
+    },
+    {
+        "name":"Especialidades",
+        "url":"/servicios",
+        "submenu": [
+            {
+                "url": "/especialidades/derecho-laboral",
+                "text": "Derecho laboral"
+            },
+            {
+                "url": "/especialidades/sucesiones",
+                "text": "Sucesiones"
+            },
+            {
+                "url": "/especialidades/divorcios",
+                "text": "Divorcios"
+            },
+            {
+                "url": "/especialidades/consorcios",
+                "text": "Consorcios"
+            },
+            {
+                "url": "/especialidades/daños-perjuicios",
+                "text": "Daños y Perjuicios"
+            },
+            {
+                "url": "/especialidades/jubilaciones-pensiones",
+                "text": "Jubilaciones y Pensiones"
+            }
+        ]
+    },
+    {
+        "name":"Asesoramiento empresarial",
+        "url":"/asesoramiento-empresarial"
+    },
+    {
+        "name":"Preguntas Frecuentes",
+        "url":"/preguntas-frecuentes"
+    },
+    {
+        "name":"Promociones",
+        "url":"/promociones"
+    },
+    {
+        "name":"Contacto",
+        "url":"/contacto"
+    }
+]

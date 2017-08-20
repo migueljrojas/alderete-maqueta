@@ -1,0 +1,41 @@
+// footer styles
+.footer {
+    padding: $base/2 0;
+    background: $green;
+
+    .row {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        @include mq(sm){
+            flex-direction: row;
+        }
+    }
+
+    &__logo {
+        filter:grayscale(100%) brightness(250%);
+        height: 80px;
+        margin-right: 20px;
+    }
+
+    &__copyright {
+        display: flex;
+        align-items: center;
+        color:$white;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    &__credits {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include mq(xs){
+            margin-top: 10px;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+mixin cta(data)
+    .cta
+        if data.img
+            .cta__img
+                img(src=data.img)
+        h3.cta__title=data.title
+        a._button.-white.-large(href=data.link.url)= data.link.text
+    

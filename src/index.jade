@@ -1,0 +1,133 @@
+extends _layouts/base
+
+include _modules/slider/slider
+include _modules/cta/cta
+
+block content
+    main.home
+        section.home__hero
+            .container
+                .row
+                    .col-xs-24
+                        +slider('home__hero__slider')
+                            each slide in site.data.home.hero.slider
+                                .home__slide
+                                    img(src=slide.img)
+                                    .home__slide__data
+                                        span.home__slide__quote= slide.quote
+                                        span.home__slide__tag Alderete & Asociados
+        
+        section.home__services
+            h2.home__section-title= site.data.home.services.title
+            .home__services__wrapper
+                ul.home__services__list
+                    each service in site.data.home.services.list
+                        li
+                            img.home__services__img(src=service.img)
+                            .home__services__data
+                                a(href=service.link.url)
+                                    h3.home__services__name= service.name
+                                p.home__services__desc= service.desc
+                                a.home__services__link(href=service.link.url)= service.link.text
+                            a._view-more(href=service.link.url)
+                            
+        section.home__cta
+            +cta(site.data.home.ctaone)
+        
+        section.home__about
+            h2.home__section-title= site.data.home.about.title
+            div.container 
+                .row 
+                    .col-xs-24.col-sm-14.home__about__text
+                        each p in site.data.home.about.text
+                            p= p
+                    .col-xs-24.col-sm-10.home__about__img
+                        img(src=site.data.home.about.img)
+        
+        section.home__team
+            h2.home__section-title= site.data.home.team.title
+            div.home__team__wrapper
+                ul.home__team__list
+                    each member, index in site.data.home.team.members
+                        li.home__team__member.wow.fadeInUp(data-wow-delay="#{(index + 1)/8}s")
+                            .home__team__member__img
+                                img(src=member.img)
+                            .home__team__member__data
+                                h3.home__team__member__name=member.name
+                                p.home__team__member__bio=member.bio
+                                ul.home__team__member__social
+                                    each red in member.social
+                                        li
+                                            a(href=red.link)
+                                                i(class="fa fa-#{red.name}")
+                            button.home__team__member__expand
+                            
+        .container-fluid
+            .row.home__aside-sections
+                section.home__whyus.col-xs-24.col-sm-12
+                    .home__whyus__wrapper
+                        h2.home__section-title!= site.data.home.whyus.title
+                        ul.home__whyus__features
+                            each item in site.data.home.whyus.features
+                                li.home__whyus__feature
+                                    span.home__whyus__feature__highlight= item.hightlight
+                                    span.home__whyus__feature__text= item.text
+                                
+                section.home__contact.col-xs-24.col-sm-12
+                    h2.home__section-title= site.data.home.contact.title
+                        .home__contact__wrapper
+                            form._form
+                                input(placeholder="Nombre y Apellido", type="text")
+                                input(placeholder="Email",type="email")
+                                input(placeholder="Teléfono", type="text")
+                                select(placeholder="Especialidad")
+                                    each item, index in site.data.home.contact.selectbox
+                                        option(value="opcion-#{index}")= item
+                                label Mensaje
+                                textarea(rows="7")
+                                button._button.-white(type="submit") Enviar
+                                
+        .container.home__contact__container
+            .row.home__aside-sections.nopadding
+                .col-xs-24.col-sm-12.home__contact__data
+                    h3.home__contact__data__title= site.data.home.contact.card.title
+                    ul.home__contact__data__list
+                        each item in site.data.home.contact.card.data
+                            li.home__contact__data__item
+                                i(class="fa fa-#{item.icon}")
+                                p!=item.text
+                    ul.home__contact__data__social
+                        each red in site.data.social
+                            li
+                                a(href=red.url, target="_blank")
+                                    i(class="fa fa-#{red.name}")
+                .col-xs-24.col-sm-12.home__contact__map
+                    .embed-responsive.-map
+                        iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62475.78173550588!2d-58.487677280905714!3d-34.61733866513783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos+Aires%2C+CABA!5e0!3m2!1ses!2sar!4v1472137314421", style="border:0", allowfullscreen)
+                                
+        section.home__testimonials
+            h2.home__section-title= site.data.home.testimonials.title
+            .container
+                .row
+                    .col-xs-24
+                        +slider('home__testimonials__slider')
+                            each slide in site.data.home.testimonials.slider
+                                .home__testimonials__slide
+                                    .home__testimonials__slide__wrapper.clearfix
+                                        .home__testimonials__data
+                                            .home__testimonials__data__img
+                                                img(src=slide.img)
+                                            .home__testimonials__data__info
+                                                h3.home__testimonials__data__name= slide.name
+                                                    span.home__testimonials__data__job= slide.job
+                                                ul.home__testimonials__data__social
+                                                    each red in slide.social
+                                                        li
+                                                            a(href=red.link)
+                                                                i(class="fa fa-#{red.name}")
+                                        .home__testimonials__text
+                                            p= slide.text
+            
+        section.home__cta
+            +cta(site.data.home.ctatwo)
+            

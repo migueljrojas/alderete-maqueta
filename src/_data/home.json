@@ -1,0 +1,276 @@
+{
+    "hero": {
+        "slider": [
+            {
+                "img":"/images/home/slide1.jpg",
+                "quote": "Cada cliente es importante"
+            },
+            {
+                "img":"/images/home/slide2.jpg",
+                "quote": "Quien cuenta la mejor historia gana"
+            }
+        ]
+    },
+    "services": {
+        "title": "Especialidades",
+        "list": [
+            {
+                "name": "Derecho laboral",
+                "img": "/images/home/especialidad1.jpg",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "link":{
+                    "url": "/especialidades/derecho-laboral",
+                    "text": "ver más >>"
+                }
+            },
+            {
+                "name": "Sucesiones",
+                "img": "/images/home/especialidad2.jpg",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "link":{
+                    "url": "/especialidades/sucesiones",
+                    "text": "ver más >>"
+                }
+            },
+            {
+                "name": "Divorcios",
+                "img": "/images/home/especialidad3.jpg",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "link":{
+                    "url": "/especialidades/divorcios",
+                    "text": "ver más >>"
+                }
+            },
+            {
+                "name": "Consorcios",
+                "img": "/images/home/especialidad4.jpg",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "link":{
+                    "url": "/especialidades/consorcios",
+                    "text": "ver más >>"
+                }
+            },
+            {
+                "name": "Daños y perjuicios",
+                "img": "/images/home/especialidad5.jpg",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "link":{
+                    "url": "/especialidades/daños-perjuicios",
+                    "text": "ver más >>"
+                }
+            },
+            {
+                "name": "Jubilación y pensiones",
+                "img": "/images/home/especialidad6.jpg",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "link":{
+                    "url": "/especialidades/jubilaciones-pensiones",
+                    "text": "ver más >>"
+                }
+            }
+        ]
+    },
+    "ctaone": {
+        "title": "Asesoramiento para empresas",
+        "img": "/images/home/cta1.jpg",
+        "link": {
+            "url": "/asesoramiento-empresarial",
+            "text": "Conocé más"
+        }
+    },
+    "ctatwo": {
+        "title": "Asesoramiento y consultoría especializada",
+        "img": "/images/home/cta2.jpg",
+        "link": {
+            "url": "/contacto",
+            "text": "Concretar Entrevista"
+        }
+    },
+    "about": {
+        "title": "Estudio Jurídico Alderete y Asociados",
+        "text": [
+            "Nuestro estudio jurídico se encuentra capacitado y dedicado a cubrir la problemática diaria de nuestros clientes.",
+            "Analizamos la necesidad de cada uno para brindarle el mejor servicio, asesorando en forma eficaz y confiable, con el aval de una vasta trayectoria en el ejercicio profesional.",
+            "Nuestra práctica abarca diversas ramas del derecho, al tiempo que brindamos asesoramiento e intervención extrajudicial o judicial en conflictos legales. En la actualidad y atento la realidad judicial procuramos la solución del conflicto gestionando la negociación a ultranza, evitando de tal manera el innecesario dispendio económico y una solución mas inmediata.",
+            "Nuestros objetivos son claros y concretos, por ello la atención personalizada y el seguimiento de cada caso, con gran compromiso y reserva profesional absoluta para con el cliente."
+        ],
+        "img": "/images/home/about.jpg"
+    },
+    "team": {
+        "title":"Nuestro Equipo de abogados",
+        "members": [
+            {
+                "name": "Agustina Perez",
+                "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "img": "/images/abogados/agustina-perez.jpg",
+                "social": [
+                    {
+                        "link":"http://facebook.com",
+                        "name": "facebook"
+                    },
+                    {
+                        "link":"http://twitter.com",
+                        "name": "twitter"
+                    },
+                    {
+                        "link":"http://google.com",
+                        "name": "google-plus"
+                    },
+                    {
+                        "link":"http://linkedin.com",
+                        "name": "linkedin"
+                    }
+                ]
+            },
+            {
+                "name": "José Campos",
+                "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "img": "/images/abogados/jose-campos.jpg",
+                "social": [
+                    {
+                        "link":"http://facebook.com",
+                        "name": "facebook"
+                    },
+                    {
+                        "link":"http://twitter.com",
+                        "name": "twitter"
+                    },
+                    {
+                        "link":"http://google.com",
+                        "name": "google-plus"
+                    },
+                    {
+                        "link":"http://linkedin.com",
+                        "name": "linkedin"
+                    }
+                ]
+            },
+            {
+                "name": "Sol Rodrgíguez",
+                "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "img": "/images/abogados/sol-rodriguez.jpg",
+                "social": [
+                    {
+                        "link":"http://facebook.com",
+                        "name": "facebook"
+                    },
+                    {
+                        "link":"http://twitter.com",
+                        "name": "twitter"
+                    },
+                    {
+                        "link":"http://google.com",
+                        "name": "google-plus"
+                    },
+                    {
+                        "link":"http://linkedin.com",
+                        "name": "linkedin"
+                    }
+                ]
+            }
+        ]
+    },
+    "whyus": {
+        "title": "<span>¿Por qué</span> elegirnos?",
+        "features": [
+            {
+                "hightlight": "30",
+                "text": "Años de experiencia profesinal"
+            },
+            {
+                "hightlight": "UBA",
+                "text": "Todos nuestros abogados son egresdos de la"
+            },
+            {
+                "hightlight": "1 a 1",
+                "text": "Atendemos y seguimos personalmente cada caso"
+            }
+        ]
+    },
+    "contact": {
+        "title": "Contactanos",
+        "selectbox": [
+            "Dereche laboral",
+            "Sucesiones",
+            "Divorcios",
+            "Consorcios",
+            "Daños y perjuicios",
+            "Jubilaciones y Pensiones",
+            "Asesoramiento empresarial"
+        ],
+        "card": {
+            "title": "La solución a tus problemas legales",
+            "data": [
+                {
+                    "icon":"phone",
+                    "text": "+54 911 3333 3333"
+                },
+                {
+                    "icon":"map-marker",
+                    "text": "Talcahuano 160,<br>Timbre 2 -D. C.A.B.A."
+                },
+                {
+                    "icon":"whatsapp",
+                    "text": "+54 9 11 8888 8888<br>+54 9 11 7777 7777"
+                },
+                {
+                    "icon":"clock-o",
+                    "text": "Lun a Vie<br>de 9 a 18 hrs"
+                }
+            ]
+        }
+    },
+    "testimonials": {
+        "title": "Qué dicen nuestros clientes",
+        "slider": [
+            {
+                "img": "/images/home/testimonial1.jpg",
+                "name": "Alex Santos",
+                "job": "CEO",
+                "social": [
+                    {
+                        "link":"http://facebook.com",
+                        "name": "facebook"
+                    },
+                    {
+                        "link":"http://twitter.com",
+                        "name": "twitter"
+                    },
+                    {
+                        "link":"http://google.com",
+                        "name": "google-plus"
+                    },
+                    {
+                        "link":"http://linkedin.com",
+                        "name": "linkedin"
+                    }
+                ],
+                "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            },
+            {
+                "img": "/images/home/testimonial2.jpg",
+                "name": "Leonardo Cuadros",
+                "job": "Publicista",
+                "social": [
+                    {
+                        "link":"http://facebook.com",
+                        "name": "facebook"
+                    },
+                    {
+                        "link":"http://twitter.com",
+                        "name": "twitter"
+                    },
+                    {
+                        "link":"http://google.com",
+                        "name": "google-plus"
+                    },
+                    {
+                        "link":"http://linkedin.com",
+                        "name": "linkedin"
+                    }
+                ],
+                "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            }
+        ]
+    }
+}
