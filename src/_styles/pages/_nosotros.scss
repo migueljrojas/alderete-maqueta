@@ -1,0 +1,123 @@
+.nosotros {
+    $n: &;
+
+    &__hero {
+        background: url('http://www.legalsup.ru/upload/iblock/55d/consult.jpg') no-repeat left center;
+        background-size:cover;
+        height: 40vh;
+
+        @include mq(md){
+            min-height: 65vh;
+            height: auto;
+            background-attachment: fixed;
+        }
+
+        &__title {
+            font-family: $altFont;
+            font-weight: 300;
+            font-size: 28px;
+            color: $yellow;
+            padding-bottom: 20px;
+            border-bottom: 1px solid $lightGray;
+            margin: 0 0 40px;
+
+            @include mq(sm){
+                font-size: 36px;
+            }
+
+            @include mq(md){
+                font-size: 48px;
+            }
+        }
+
+        &__text {
+            font-size: 18px;
+            color: $midGray;
+
+            @include mq(sm){
+                font-size: 21px;
+            }
+
+            @include mq(lg){
+                font-size: 24px;
+            }
+        }
+    }
+
+
+    &__intro {
+        &__wrapper {
+            padding: 20px;
+            max-width: 900px;
+
+            @include mq(sm){
+                padding: 40px;
+            }
+        }
+    }
+
+    &__middle {
+        background: $lightestGray;
+        text-align: center;
+        padding: 40px 0;
+
+        &__name {
+            font-family: $altFont;
+            font-weight: 300;
+            color: $orange;
+        }
+
+        &__text {
+            font-size: 16px;
+
+            @include mq(sm){
+                font-size: 18px;
+            }
+
+            @include mq(lg){
+                font-size: 21px;
+            }
+        }
+
+        &__item {
+            border: 1px solid $midGray;
+            padding: 20px;
+            position: relative;
+            margin-bottom: 20px;
+
+            @include mq(sm){
+                margin-bottom: 0;
+            }
+
+            &:before,
+            &:after {
+                position: absolute;
+                content: '';
+                left:40px;
+                right: 40px;
+                background: $lightestGray;
+                height: 20px;
+                z-index: 2;
+            }
+
+            &:before {
+                top:-10px;
+            }
+
+            &:after {
+                bottom: -10px;
+            }
+        }
+    }
+
+    &__parallax {
+        background: url('http://www.insidebusinessnyc.com/wp-content/uploads/2012/10/IMG_1932.jpg') no-repeat center center;
+        background-size: cover;
+        height: 40vh;
+
+        @include mq(sm) {
+            background-attachment: fixed;
+            height: 50vh;
+        }
+    }
+}

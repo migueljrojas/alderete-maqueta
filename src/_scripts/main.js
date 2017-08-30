@@ -7,6 +7,7 @@ global.$ = global.jQuery = require('jquery');
 global._ = require('underscore');
 var Header = require('../_modules/header/header');
 var Slider = require('../_modules/slider/slider');
+var Faqs = require('../_modules/faq/faq');
 var Home = require('./home');
 
 $(function() {
@@ -16,4 +17,5 @@ $(function() {
     new Home();
     new Header();
     new Slider();
+    new Faqs();
 });

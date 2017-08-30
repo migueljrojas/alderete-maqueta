@@ -8,27 +8,27 @@
         "url":"/servicios",
         "submenu": [
             {
-                "url": "/especialidades/derecho-laboral",
+                "url": "/derecho-laboral",
                 "text": "Derecho laboral"
             },
             {
-                "url": "/especialidades/sucesiones",
+                "url": "/sucesiones",
                 "text": "Sucesiones"
             },
             {
-                "url": "/especialidades/divorcios",
+                "url": "/divorcios",
                 "text": "Divorcios"
             },
             {
-                "url": "/especialidades/consorcios",
+                "url": "/consorcios",
                 "text": "Consorcios"
             },
             {
-                "url": "/especialidades/daños-perjuicios",
+                "url": "/daños-perjuicios",
                 "text": "Daños y Perjuicios"
             },
             {
-                "url": "/especialidades/jubilaciones-pensiones",
+                "url": "/jubilaciones-pensiones",
                 "text": "Jubilaciones y Pensiones"
             }
         ]

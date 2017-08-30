@@ -1,0 +1,7 @@
+mixin faq(data)
+    article.faq
+        .faq__question
+            p= data.Q
+        .faq__answer
+            each p in data.A
+                p= p

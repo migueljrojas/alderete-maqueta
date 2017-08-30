@@ -1,0 +1,53 @@
+extends ../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+block content
+    main.especialidad
+        section.especialidad__hero
+            h1.especialidad__hero__title Asesoramiento para empresas
+            img.especialidad__hero__img(src="http://hankinslawindy.com/wp-content/uploads/2016/12/injury-lawyer.jpg")
+        
+        section.especialidad__body
+            .container
+                .row
+                    .col-xs-24
+                        .especialidad__wrapper
+                            p.especialidad__summary Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                            h2.especialidad__title Lorem Ipsum dolor sit amet
+                            p.especialidad__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                            p.especialidad__text Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                            h2.especialidad__title Lorem Ipsum dolor sit amet
+                            p.especialidad__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+        
+        
+        section.especialidad__contacto
+            .container-fluid
+                .row
+                    .col-xs-24.especialidad__parallax
+            
+                .row.home__aside-sections
+                    section.home__whyus.col-xs-24.col-sm-12
+                        .home__whyus__wrapper
+                            h2.home__section-title!= site.data.home.whyus.title
+                            ul.home__whyus__features
+                                each item, index in site.data.home.whyus.features
+                                    li.home__whyus__feature.wow.fadeInLeft
+                                        span.home__whyus__feature__highlight= item.hightlight
+                                        span.home__whyus__feature__text= item.text
+                                    
+                    section.home__contact.col-xs-24.col-sm-12
+                        h2.home__section-title= site.data.home.contact.title
+                            .home__contact__wrapper
+                                form._form
+                                    input(placeholder="Nombre y Apellido", type="text")
+                                    input(placeholder="Email",type="email")
+                                    input(placeholder="Teléfono", type="text")
+                                    select(placeholder="Especialidad")
+                                        each item, index in site.data.home.contact.selectbox
+                                            option(value="opcion-#{index}")= item
+                                    label Mensaje
+                                    textarea(rows="7")
+                                    button._button.-white(type="submit") Enviar

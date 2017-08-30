@@ -1,0 +1,116 @@
+.faqs {
+    &__hero {
+        position: relative;
+        height: 50vh;
+        overflow: hidden;
+        background: $black;
+
+        @include mq(sm){
+            height: 40vh;
+        }
+
+        &__title {
+            position: absolute;
+            z-index: 2;
+            top:50%;
+            transform: translateY(-50%);
+            width: 100%;
+            font-family: $altFont;
+            font-weight: 300;
+            font-size: 28px;
+            text-align: center;
+            margin: auto;
+            color: $white;
+
+            @include mq(sm){
+                font-size: 36px;
+            }
+
+            @include mq(md){
+                font-size: 48px;
+            }
+        }
+
+        &__img {
+            position: absolute;
+            z-index: 0;
+            left: 50%;
+            top:50%;
+            transform: translate3d(-50%, -50%, 0);
+            min-width: 100%;
+            min-height: 100%;
+            width: 100%;
+            opacity: .5;
+        }
+    }
+
+    &__body {
+        padding: 12% 0;
+        background: $green;
+
+        @include mq(sm){
+            padding: 8% 0;
+        }
+
+        @include mq(md){
+            padding: 4% 0;
+        }
+    }
+
+    &__wrapper {
+        padding: 15px;
+        width: 90%;
+        margin: 0 auto 0;
+        background: $white;
+        box-shadow: 0 0 20px 5px rgba(0,0,0,.15);
+
+        @include mq(sm) {
+            margin: 0 auto 0;
+            padding: 40px;
+        }
+
+        @include mq(md) {
+            margin: 0 auto 0;
+        }
+    }
+
+    &__summary {
+        font-family: $altFont;
+        color: $midGray;
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 20px;
+
+        @include mq(sm) {
+            font-size: 18px;
+        }
+    }
+
+    &__categories {
+        li {
+            background: $lightestGray;
+            border-bottom: 1px dotted $midGray;
+            padding: 5px 10px;
+            border-left:0 solid $darkGreen;
+            font-weight: 600;
+            transition: all $duration $easing;
+
+            &:hover,
+            &.-active{
+                color: $darkGreen;
+                border-left: 5px solid $darkGreen;
+            }
+        }
+    }
+
+    &__parallax {
+        background: url('http://justiceatwork.com/wp-content/uploads/2017/03/Savannah-Employment-Lawyers.jpg') no-repeat center center;
+        background-size: cover;
+        height: 50vh;
+
+        @include mq(sm) {
+            background-attachment: fixed;
+            height: 70vh;
+        }
+    }
+}

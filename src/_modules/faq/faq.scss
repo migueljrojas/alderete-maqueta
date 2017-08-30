@@ -1,0 +1,76 @@
+.faq {
+    $p: &;
+    border-bottom: 1px dotted $darkGreen;
+
+    &__question {
+        color:$darkGreen;
+        font-weight: bold;
+        position: relative;
+        background: $bgSecondary;
+        padding: 20px 45px 20px 20px;
+        line-height: 1;
+        cursor: pointer;
+        border-left:0 solid $darkGreen;
+        transition: all $duration $easing;
+        border-right: 50px solid $darkGreen;
+
+        &:hover {
+            border-left:5px solid transparentize($darkGreen, .3);
+        }
+
+        p {
+            margin: 0;
+            font-size:16px;
+            line-height: 21px;
+
+            @include mq(sm){
+                font-size:18px;
+                line-height: 24px;
+            }
+        }
+
+        &:before,
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            right:-40px;
+            width: 30px;
+            height: 1px;
+            background: $white;
+            top:calc(50% - 1px);
+            transition: all $duration $easing;
+            pointer-events: none;
+        }
+
+        &:after {
+            transform: rotate(90deg);
+        }
+    }
+
+    &__answer {
+        transition: all $duration $easing;
+        overflow: hidden;
+        opacity: 0;
+
+        p{
+            padding: 20px 20px 0;
+            &:not(:last-child) {
+                margin: 0;
+            }
+        }
+    }
+
+    &.-open {
+        #{$p}__question {
+            border-left: 5px solid $darkGreen;
+            &:after{
+                transform: rotate(0);
+            }
+        }
+
+        #{$p}__answer {
+            opacity: 1;
+        }
+    }
+}

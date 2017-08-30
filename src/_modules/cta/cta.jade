@@ -4,5 +4,6 @@ mixin cta(data)
             .cta__img
                 img(src=data.img)
         h3.cta__title=data.title
-        a._button.-white.-large(href=data.link.url)= data.link.text
+        if data.link
+            a._button.-white.-large(href=data.link.url)= data.link.text
     

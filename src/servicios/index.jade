@@ -1,0 +1,54 @@
+extends ../_layouts/base
+include ../_modules/cta/cta
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+block content
+    main.servicios
+        h1.servicios__title= site.data.servicios.title
+        section.servicios__list
+            each service in site.data.home.services.list
+                .servicios__item
+                    img.servicios__item__img(src=service.img)
+                    .servicios__item__data
+                        a(href=service.link.url)
+                            h2.servicios__item__name= service.name
+                        p.servicios__item__desc= service.desc
+                        a.servicios__item__link(href=service.link.url)= service.link.text
+                    a._view-more(href=service.link.url)
+        
+        section.servicios__cta
+            +cta(site.data.home.ctaone)
+            
+            
+        section.servicios__contacto
+            .container-fluid
+                .row
+                    .col-xs-24.servicios__parallax
+            
+                .row.home__aside-sections
+                    section.home__whyus.col-xs-24.col-sm-12
+                        .home__whyus__wrapper
+                            h2.home__section-title!= site.data.home.whyus.title
+                            ul.home__whyus__features
+                                each item, index in site.data.home.whyus.features
+                                    li.home__whyus__feature.wow.fadeInLeft
+                                        span.home__whyus__feature__highlight= item.hightlight
+                                        span.home__whyus__feature__text= item.text
+                                    
+                    section.home__contact.col-xs-24.col-sm-12
+                        h2.home__section-title= site.data.home.contact.title
+                            .home__contact__wrapper
+                                form._form
+                                    input(placeholder="Nombre y Apellido", type="text")
+                                    input(placeholder="Email",type="email")
+                                    input(placeholder="Teléfono", type="text")
+                                    select(placeholder="Especialidad")
+                                        each item, index in site.data.home.contact.selectbox
+                                            option(value="opcion-#{index}")= item
+                                    label Mensaje
+                                    textarea(rows="7")
+                                    button._button.-white(type="submit") Enviar
+            

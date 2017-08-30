@@ -1,0 +1,130 @@
+.especialidad {
+    &__hero {
+        position: relative;
+        height: 50vh;
+        overflow: hidden;
+        background: $black;
+
+        @include mq(sm){
+            height: 40vh;
+        }
+
+        &__title {
+            position: absolute;
+            z-index: 2;
+            top:50%;
+            transform: translateY(-50%);
+            width: 100%;
+            font-family: $altFont;
+            font-weight: 300;
+            font-size: 28px;
+            text-align: center;
+            margin: auto;
+            color: $white;
+
+            @include mq(sm){
+                font-size: 36px;
+            }
+
+            @include mq(md){
+                font-size: 48px;
+            }
+        }
+
+        &__img {
+            position: absolute;
+            z-index: 0;
+            left: 50%;
+            top:50%;
+            transform: translate3d(-50%, -50%, 0);
+            min-width: 100%;
+            min-height: 100%;
+            width: 100%;
+            opacity: .5;
+        }
+    }
+
+    &__body {
+        padding: 12% 0;
+        background: $yellow;
+
+        @include mq(sm){
+            padding: 8% 0;
+        }
+
+        @include mq(md){
+            padding: 4% 0;
+        }
+    }
+
+    &__wrapper {
+        padding: 15px;
+        width: 90%;
+        margin: -15% auto 0;
+        background: $white;
+        box-shadow: 0 0 20px 5px rgba(0,0,0,.15);
+
+        @include mq(sm) {
+            margin: -12% auto 0;
+            padding: 40px;
+        }
+
+        @include mq(md) {
+            margin: -8% auto 0;
+        }
+    }
+
+    &__summary {
+        font-family: $altFont;
+        color: $midGray;
+        font-size: 18px;
+        font-weight: 300;
+
+        @include mq(sm) {
+            font-size: 21px;
+        }
+
+        @include mq(md) {
+            font-size: 24px;
+        }
+    }
+
+    &__title {
+        font-family: $altFont;
+        color: $orange;
+        font-size: 21px;
+        font-weight: 300;
+
+        @include mq(sm) {
+            font-size: 24px;
+        }
+
+        @include mq(md) {
+            font-size: 28px;
+        }
+    }
+
+    &__text {
+        font-size: 16px;
+        color: $midGray;
+
+        @include mq(sm) {
+            font-size: 18px;
+        }
+
+        @include mq(md) {
+            font-size: 21px;
+        }
+    }
+
+    &__parallax {
+        background: url('http://justiceatwork.com/wp-content/uploads/2017/03/Savannah-Employment-Lawyers.jpg') no-repeat center center;
+        background-size: cover;
+        height: 50vh;
+
+        @include mq(sm) {
+            background-attachment: fixed;
+            height: 70vh;
+        }
+    }
+}

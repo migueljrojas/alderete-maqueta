@@ -19,7 +19,7 @@
                 "img": "/images/home/especialidad1.jpg",
                 "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
                 "link":{
-                    "url": "/especialidades/derecho-laboral",
+                    "url": "/derecho-laboral",
                     "text": "ver más >>"
                 }
             },
@@ -28,7 +28,7 @@
                 "img": "/images/home/especialidad2.jpg",
                 "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
                 "link":{
-                    "url": "/especialidades/sucesiones",
+                    "url": "/sucesiones",
                     "text": "ver más >>"
                 }
             },
@@ -37,7 +37,7 @@
                 "img": "/images/home/especialidad3.jpg",
                 "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
                 "link":{
-                    "url": "/especialidades/divorcios",
+                    "url": "/divorcios",
                     "text": "ver más >>"
                 }
             },
@@ -46,7 +46,7 @@
                 "img": "/images/home/especialidad4.jpg",
                 "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
                 "link":{
-                    "url": "/especialidades/consorcios",
+                    "url": "/consorcios",
                     "text": "ver más >>"
                 }
             },
@@ -55,7 +55,7 @@
                 "img": "/images/home/especialidad5.jpg",
                 "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
                 "link":{
-                    "url": "/especialidades/daños-perjuicios",
+                    "url": "/daños-perjuicios",
                     "text": "ver más >>"
                 }
             },
@@ -64,7 +64,7 @@
                 "img": "/images/home/especialidad6.jpg",
                 "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
                 "link":{
-                    "url": "/especialidades/jubilaciones-pensiones",
+                    "url": "/jubilaciones-pensiones",
                     "text": "ver más >>"
                 }
             }

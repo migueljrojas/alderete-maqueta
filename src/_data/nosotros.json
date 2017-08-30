@@ -1,0 +1,24 @@
+{
+    "hero":{
+        "title":"El Estudio",
+        "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    "intermission":{
+        "title": "Cuantas mas leyes, más rompedores de leyes",
+        "img": "/images/home/cta1.jpg"
+    },
+    "middle":[
+        {
+            "name":"Mision y Visión",
+            "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "name":"Valores",
+            "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "name":"Objetivos",
+            "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        }
+    ]
+}
